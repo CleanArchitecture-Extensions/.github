@@ -1,0 +1,40 @@
+name: "Feature request"
+description: "Propose a new capability or improvement"
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your idea! Share the problem, the proposed solution, and any constraints.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What’s the underlying need or pain point?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the change or API you’d like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches you evaluated.
+  - type: input
+    id: scope
+    attributes:
+      label: Affected module(s)
+      placeholder: "e.g., Core, Multitenancy.EFCore, Observability"
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks or concerns
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
